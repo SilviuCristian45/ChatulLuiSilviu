@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat app</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <script src="index.js"></script>
+</head>
+<body>
+    <p id="welcome"> Salut </p>
+  <div class="main">
+    <div class="col-md-4">
+            <h1> Inregistreaza-te </h1>
+            <form action="register.php" method="post">
+                <ul>
+              <li>  <label> Nume de utilizator : </label> <input type="text" name="username"> </input> </li>
+              <li>  <label> Parola : </label> <input type="password" name="password"> </input> </li>
+              <li>  <label> Repeta parola : </label> <input type="password" name="rpassword"> </input> </li>
+              <li>  <label> E-mail : </label> <input type="text" name="email"> </input> </li>
+               </ul>
+            <button type="submit" class="register"> Inregistreaza-te gratuit </button>
+            </form>
+    </div>
+    <div class="col-md-4">
+                <h1> Logheaza-te </h1>
+                    <ul>
+                  <li>  <label> Nume de utilizator : </label> <input type="text" name="username" id="utilizator"> </input> </li>
+                  <li>  <label> Parola : </label> <input type="password" name="password" id="parola"> </input> </li>
+                  <li class="checkbox">  <label> Afiseaza parola :  </label> <input type="checkbox"> </input> </li>
+                   </ul>
+                <button type="button" class="login" onclick="mesajLogare()"> Autentificare </button>
+                <button type="button" class="forgot" id="forgor"> Am uitat parola </button>
+    </div>
+    <div class="col-md-4">
+        <div class="message_container" id="msg_container">
+
+        </div>
+        <textarea name="" id="casetaText" cols="50" rows="2">
+
+        </textarea>
+
+        <button type="button" class="trimite" onclick="trimiteMesaj()"> Trimite </button>
+    </div>
+  </div>
+</body>
+</html>

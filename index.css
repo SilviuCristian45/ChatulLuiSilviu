@@ -1,0 +1,47 @@
+body{
+    background-color: lightgrey;
+}
+.main{
+    display: flex;
+}
+.col-md-4{
+    border : 1px solid black;
+    width: 20em;
+    height: 20em;
+}
+form{
+    display: block;
+    clear: both;
+}
+ul {
+    list-style: none;
+}
+li{
+    margin-top: 5%;
+}
+h1{
+    text-align: center;
+}
+input{
+    float: right;
+    width: 60%;
+}
+.register,.login,.trimite{
+    float: right;
+}
+.message_container{
+    height: 15em;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 10px;
+    position: relative;
+    border: 1px solid black;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+.container{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
