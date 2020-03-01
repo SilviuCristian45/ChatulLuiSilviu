@@ -10,7 +10,7 @@
     $result = mysqli_query($conn,$sql);
     $ok = 0;//pp ca nu se poate loga
     while ($row = mysqli_fetch_assoc($result)) {
-        if($row["Username"] == $utilizator && password_verify($password, $row["Parola"])){
+        if($row["Username"] == $utilizator &&   password_verify($parola,$row['Parola']) ){
             $ok = 1;//marcam ca s-a putut loga
         }
     }

@@ -21,7 +21,7 @@ function mesajLogare() {
     };
     username  = document.getElementById("utilizator").value;
     pass = document.getElementById("parola").value;
-    if(username && pass){
+    if(username!="" && pass!=""){
     xhttp.open("GET","login.php"+"?"+"username="+username+"&"+"password="+pass, true);
     xhttp.send();
     }
